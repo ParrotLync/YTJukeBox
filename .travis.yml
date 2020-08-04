@@ -1,0 +1,12 @@
+language: java
+dist: trusty
+jdk:
+  - openjdk8
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: Fr3enKwO4MgJWOcG/4l4/AbvKyVnsj4sNieRkA2NSbawQ12mnNoDUExhZyaCtRH3w5npOUO1tRur7srWCeslZiRFfDgI1H47UvWmpwxrqnDpVBndeKKZRgwxGvLwFbdy797Rvx8DPXXfU5rRoT2n9K6GvmqRLNLGFzbOXAxs8kz4l3EqqBiFUNJKx/d99nJuDXYGOG8/PaaX65DbZKX13ZeCHAABgVuIA9tKVtZ6EE4VJVezA+pb/xKbzXoNotkZ8IQcn2Xq10OBGL6Q54xqCFyCqqmsnpGd6yJTiqXFr7IwzH5QIAlfll+7tnGR0KWFkNzJtaTKQCV4L8lS8GL+qXspgP9l8LTtDZ/5M0aPNvOZ1C6jpI8W8sn84jOul8JeV14D8EsK4lFY5x/egIahoUKBr+RP8sz/vSsfDCyxWBLQjr34PoCGzo3y6uLVu9Rbmm1nqC22kRxh0mXpL4/R+ZAeJLYn2NvSHnp/ktgVpDN9N1b1VggGduC/FwOGInIufQw7sSbMo5TNIyEBauBP5KxNbVmigjVhyAFgO698B1y9zKdKIG3lSQAptyL5IHjhd8CcQ2SH3OoA0ghxzOFo4ed+sV1xM68zdxk9BvzJW/lMXgo0T4rp4RYhc2drlwpq0fRJHuWNrI2/zrWnOs0XRK7bO3rsVcktVu3uYetrrw0=
+  file: plugin/target/*.jar
+  on:
+    tags: true

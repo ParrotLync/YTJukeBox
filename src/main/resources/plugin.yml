@@ -1,0 +1,18 @@
+main: nl.parrotlync.ytjukebox.YTJukebox
+name: YTJukebox
+version: 1.0
+description: Youtube addon for MCJukebox
+api-version: 1.15
+author: ParrotLync
+depend: [MCJukebox]
+commands:
+  youtube:
+    description: Default YTJukebox command
+    usage: /youtube
+permissions:
+  ytjukebox.use:
+    default: op
+    description: Permission to use YTJukebox commands
+  ytjukebox.update:
+    default: op
+    description: Get message if update is available
