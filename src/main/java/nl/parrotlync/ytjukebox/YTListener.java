@@ -13,7 +13,7 @@ public class YTListener implements Listener {
         Player player = event.getPlayer();
         if (player.hasPermission("ytjukebox.update")) {
             if (YTJukebox.updateAvailable) {
-                ChatUtil.sendMessage(player, "&7There is an update available! Get it at https://www.spigotmc.org/resources/RESOURCE/", true);
+                ChatUtil.sendMessage(player, "&7There is an update available! Get it at https://www.spigotmc.org/resources/ytjukebox.82361/", true);
             }
         }
     }
