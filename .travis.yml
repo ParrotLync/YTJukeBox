@@ -6,7 +6,8 @@ deploy:
   provider: releases
   api_key:
     secure: MtmkTfpDEOLnYj7atm1m8r3+yEqmol3DxHqL3CirYrQkIiDLcYTbSRhqdgIEm1qF0354qOHw+E+F/f6VH1woMtONsUmuV/52KxJusTQxrHQPnDBoMyLca2uSfdJ9UqXPm2OSs4f8VQklCKe8AOmUdS+GZO9puOGNymScKi+7jPIS+Xj8OIthABJVpcVLvTA1RmNKOKALCQdB9zV1Eht6/HYmwg3G4tVbEquv5lIds4UO7BcM8t6NUC/2FrbR343UDTFvZTyNxna6mkd4TxGJoUthkEexeh8zG2YpahmxIBUmMtVJpvl2qzsKrrabHR+u3fP24kPxfpoYxS3m4pgAP8sVr+/m7XDfnp1s2DFTCDMB6vCqxQelInA2zfO9NiK3Gj1nXnhmNo2vHHZ7eIP7QNgRLEE/h3Qfns7cwOVUy2qgcR8sXcjakybQU3o2tgKuXMHdu1diuwRBxdoJ24vSp3bMyArRPeNgki5NH8WXfbNuSrNJhX+MAhtfCEUEk8eC2rn8sM+uKY4T5D4cM42GAdbSarMIjikAgQHOazSCwQVKsEuLc/6AtXiEPxiCzMTWZVsxfTDxw8/mVqKYA20V5KhguY+ZUNDh66teBJMMYEZlRBxChaPEBG78AUFOa6bE3v6Pr4MsxkOAvbRIu4wOXdHsTM5ea5T7ACIyY7b4QnA=
-  file: plugin/target/*.jar
+  file: "target/*"
+  file_glob: true
   on:
     repo: ParrotLync/YTJukeBox
     tags: true
