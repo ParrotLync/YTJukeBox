@@ -9,6 +9,5 @@ deploy:
   file: "target/*"
   file_glob: true
   on:
-    repo: ParrotLync/YTJukeBox
     tags: true
   skip_cleanup: 'true'
